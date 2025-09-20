@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 0; background: #f7fafc; color: #111827; }
+.container { max-width: 1000px; margin: 28px auto; padding: 18px; background: white; border-radius: 10px; box-shadow: 0 6px 18px rgba(10,10,10,0.06); }
+.header { display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.btn { padding:8px 12px; border-radius:8px; border: none; cursor:pointer; background:#2563eb; color:white; }
+.btn-muted { background:#e5e7eb; color:#111; }
+.form-row { display:flex; gap:12px; margin-bottom:10px; }
+input[type="text"], textarea { padding:10px; border-radius:8px; border:1px solid #e5e7eb; width:100%; }
+.card { padding:12px; border-radius:8px; border:1px solid #eef2ff; background:#fff; margin-bottom:12px; }
+.issue-photo { max-width:160px; max-height:120px; object-fit:cover; border-radius:6px; margin-right:8px; }
+.issue-row { display:flex; gap:12px; align-items:flex-start; }
+.small { font-size:13px; color:#6b7280; }
+.nav { display:flex; gap:10px; margin-top:12px; }
+.nav button { background:transparent; border:none; cursor:pointer; padding:6px 10px; border-radius:8px; }
+.nav .active { background:#eef2ff; }
+.footer { margin-top:18px; text-align:center; color:#6b7280; font-size:13px; }
+.grid { display:grid; grid-template-columns: 1fr 360px; gap:12px; align-items:start; }
+@media (max-width:900px) { .grid { grid-template-columns: 1fr; } .issue-photo { max-width:120px; } }
